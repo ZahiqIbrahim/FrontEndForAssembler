@@ -1,15 +1,56 @@
 body {
     font-family: Arial, sans-serif;
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
+    max-width: 1200px;
+    margin: 50px 20px;
+    padding: 20px 20px 20px 0;
     background-color: #1e1e1e;
     color: #d4d4d4;
+}
+.main-container {
+    display: flex;
+    gap: 20px;
+}
+.sidebar {
+    width: 400px;
+    flex-shrink: 0;
+    text-align: left;
+    background-color: #252526;
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px solid #3c3c3c;
+}
+.sidebar h2 {
+    color: #9cdcfe;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.instruction-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+.instruction-table thead {
+    background-color: #1d1c1c;
+}
+.instruction-table th {
+    padding: 8px;
+    text-align: left;
+    color: #9cdcfe;
+    border-bottom: 1px solid #3c3c3c;
+}
+.instruction-table td {
+    padding: 6px 8px;
+    border-bottom: 1px solid #3c3c3c;
+    color: #d4d4d4;
+}
+.instruction-table tr:hover {
+    background-color: #141414;
 }
 .container {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    flex: 1;
 }
 button {
     padding: 6px 12px;

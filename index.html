@@ -7,19 +7,45 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="code-editor">
-            <div class="editor-header">
-                <div class="header-cell address">Address</div>
-                <div class="header-cell instruction">Instruction</div>
-            </div>
-            <div class="editor-body">
-                <div class="line-numbers" id="lineNumbers"></div>
-                <textarea id="programText" spellcheck="false"></textarea>
-            </div>
+    <div class="main-container">
+        <div class="sidebar">
+            <h2>Instruction Set</h2>
+            <table class="instruction-table">
+                <thead>
+                    <tr>
+                        <th>Opcode</th>
+                        <th>Mnemonic</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>0001</td><td>LDA addr</td><td>Load value from memory address into A register.</td></tr>
+                    <tr><td>0010</td><td>ADD addr</td><td>Add value at memory address to A register.</td></tr>
+                    <tr><td>0011</td><td>SUB addr</td><td>Subtract value at memory address from A register.</td></tr>
+                    <tr><td>0100</td><td>STA addr</td><td>Store A register value into memory address.</td></tr>
+                    <tr><td>0101</td><td>LDI value</td><td>Load immediate 4-bit value directly into A register.</td></tr>
+                    <tr><td>0110</td><td>JMP addr</td><td>Jump to memory address unconditionally.</td></tr>
+                    <tr><td>0111</td><td>JPC addr</td><td>Jump if Carry flag is set.</td></tr>
+                    <tr><td>1000</td><td>JPZ addr</td><td>Jump if Zero flag is set.</td></tr>
+                    <tr><td>1110</td><td>OUT</td><td>Send A register value to output display.</td></tr>
+                    <tr><td>1111</td><td>HLT</td><td>Halt the computer. Stop execution.</td></tr>
+                </tbody>
+            </table>
         </div>
-        <button id="uploadBtn">Upload</button>
-        <textarea id="errorOutput" readonly placeholder="Logs..."></textarea>
+        <div class="container">
+            <div class="code-editor">
+                <div class="editor-header">
+                    <div class="header-cell address">Address</div>
+                    <div class="header-cell instruction">Instruction</div>
+                </div>
+                <div class="editor-body">
+                    <div class="line-numbers" id="lineNumbers"></div>
+                    <textarea id="programText" spellcheck="false"></textarea>
+                </div>
+            </div>
+            <button id="uploadBtn">Upload</button>
+            <textarea id="errorOutput" readonly placeholder="Logs..."></textarea>
+        </div>
     </div>
 
     <script src="script.js"></script>
