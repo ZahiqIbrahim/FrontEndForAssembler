@@ -104,11 +104,13 @@ textarea {
     overflow-y: auto;
 }
 #errorOutput {
+    width: 100%;
     height: 100px;
     background-color: #1a1a1a;
     color: #d4d4d4;
     border: 1px solid #3c3c3c;
     border-radius: 4px;
+    box-sizing: border-box;
 }
 #errorOutput.success {
     color: #4ec9b0;
