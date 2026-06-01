@@ -49,9 +49,11 @@ This program loads the value 15, outputs it, subtracts 5, outputs the result (10
 
 ### Prerequisites
 
-- A backend server running the assembler and serial port communication
-- The backend must expose the `/new-program` POST endpoint
+- **Backend Required**: This frontend requires the Spring Boot backend project **"8_Bit_Microcomputer_Assembler"** to function
+- **Backend Repository**: https://github.com/ZahiqIbrahim/8_Bit_Microcomputer_Assembler
+- The backend must be running and expose the `/new-program` POST endpoint
 - CORS must be configured to allow requests from this frontend
+- Serial port communication must be properly configured on the backend
 
 ### Installation
 
