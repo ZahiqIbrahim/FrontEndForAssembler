@@ -1,12 +1,12 @@
 # 8-Bit Microcontroller Assembler and Programmer
 
-A web-based Integrated Development Environment (IDE) for writing, assembling, and uploading assembly programs to an 8-bit microcontroller via serial port communication.
+A web-based Integrated Development Environment (IDE) for writing, assembling, and uploading assembly programs to an 8-bit microcomputer via serial port communication.
 
 ## Features
 
 - **Code Editor** with line numbers for writing assembly programs
 - **Instruction Set Reference** - Quick access to all supported opcodes and mnemonics
-- **Real-time Upload** - Upload programs directly to the microcontroller memory
+- **Real-time Upload** - Upload programs directly to the microcomputer memory
 - **Error Logging** - Clear feedback on upload success or failure
 - **Dark Theme** - Easy on the eyes for extended coding sessions
 - **Responsive Design** - Clean, modern interface
