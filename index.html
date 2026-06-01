@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assembler Program Upload</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="code-editor">
+            <div class="editor-header">
+                <div class="header-cell address">Address</div>
+                <div class="header-cell instruction">Instruction</div>
+            </div>
+            <div class="editor-body">
+                <div class="line-numbers" id="lineNumbers"></div>
+                <textarea id="programText" spellcheck="false"></textarea>
+            </div>
+        </div>
+        <button id="uploadBtn">Upload</button>
+        <textarea id="errorOutput" readonly placeholder="Logs..."></textarea>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

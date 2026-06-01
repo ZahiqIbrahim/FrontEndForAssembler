@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+button {
+    padding: 6px 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    align-self: flex-end;
+}
+button:hover {
+    background-color: #218838;
+}
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #3c3c3c;
+    border-radius: 4px;
+    font-family: 'Consolas', 'Monaco', monospace;
+    font-size: 14px;
+    resize: vertical;
+    background-color: #252526;
+    color: #d4d4d4;
+    line-height: 1.5;
+}
+#programText {
+    height: 400px;
+    resize: none;
+    padding: 10px;
+    line-height: 1.5;
+}
+.code-editor {
+    border: 1px solid #3c3c3c;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.editor-header {
+    display: flex;
+    background-color: #2d2d2d;
+    border-bottom: 1px solid #3c3c3c;
+}
+.header-cell {
+    padding: 8px 12px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #9cdcfe;
+}
+.header-cell.address {
+    width: 60px;
+    min-width: 60px;
+    text-align: center;
+    border-right: 1px solid #3c3c3c;
+    box-sizing: border-box;
+    padding: 8px 0;
+}
+.header-cell.instruction {
+    flex: 1;
+    padding-left: 12px;
+    box-sizing: border-box;
+}
+.editor-body {
+    display: flex;
+    position: relative;
+}
+.line-numbers {
+    width: 60px;
+    min-width: 60px;
+    background-color: #1e1e1e;
+    border-right: 1px solid #3c3c3c;
+    padding: 10px 0;
+    text-align: center;
+    font-family: 'Consolas', 'Monaco', monospace;
+    font-size: 14px;
+    color: #858585;
+    line-height: 1.5;
+    overflow: hidden;
+    user-select: none;
+    box-sizing: border-box;
+    height: 400px;
+}
+.editor-body textarea {
+    flex: 1;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    background-color: #252526;
+    padding: 10px;
+    line-height: 1.5;
+    box-sizing: border-box;
+    height: 400px;
+    overflow-y: auto;
+}
+#errorOutput {
+    height: 100px;
+    background-color: #1a1a1a;
+    color: #d4d4d4;
+    border: 1px solid #3c3c3c;
+    border-radius: 4px;
+}
+#errorOutput.success {
+    color: #4ec9b0;
+}
+#errorOutput.error {
+    color: #ff502d;
+}
